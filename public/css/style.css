@@ -1,0 +1,297 @@
+
+body{
+    margin: 0;
+    height:100vh;
+    background: rgb(149,160,149);
+background: linear-gradient(0deg, rgba(149,160,149,1) 35%, rgba(26,65,78,1) 80%);
+}
+
+#fond {
+    height: calc(100% - 70px);
+    background-size: cover;
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+}
+
+#centre {
+        display: flex;
+        height: 100%;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+}
+
+nav a {
+position: relative;
+left: 900px;
+color: white;
+font-size: 20px;
+text-decoration: none;
+line-height: 50px;
+padding: 20px;
+
+}
+ 
+nav a:hover{
+
+color: rgb(233, 230, 64);
+}
+
+nav{
+background-color: #1a414e;
+padding: 10px;
+
+
+}
+
+.nom{
+    color: white;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ligne{
+    color: white;
+}
+
+.port{
+    color: white;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.link{
+    height: 15%;
+    position: absolute;
+    left: 700px;
+    top: 580px;
+}
+
+.git{
+    height: 10%;
+    position: absolute;
+    left: 600px;
+    top: 620px;
+}
+
+.twit{
+    height: 10%;
+    position: absolute;
+    left: 840px;
+    top: 620px;
+}
+
+/* TRAVAUX*/ 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+section::before {
+	content: '';
+	position: absolute;
+	top: 90px;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(#22ca13, #51316d);
+	clip-path: circle(30% at right 70%);
+}
+
+section::after {
+	content: '';
+	position: absolute;
+	top: 90px;
+	left: 0;
+	width: 100%;
+
+    
+}
+
+.container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.container .card {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.container .card:hover .content {
+	transform: translateY(-20px);
+}
+
+.container .card .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+   
+}
+
+.container .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+   
+}
+
+.container .card .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.container .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.container .card .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+.container .card .sci li {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.container .card:hover .sci li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.container .card .sci li a {
+	color: #fff;
+	font-size: 20px;
+}
+
+
+/* LIEN */ 
+
+
+
+
+.glob {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    width: 100%;
+    height: 90vh;
+    overflow: auto;
+    flex-direction: row;
+   
+    
+    
+
+}
+
+.glob123 {
+    height:225px;
+    width: 300px;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    margin: 40px;
+    
+}
+
+.glob123:hover {
+    transform: rotateY(180deg);
+}
+
+.glob123 .side {
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.glob123 .back {
+    transform: rotateY(180deg);
+}
+
+.side h3 {
+    padding-top: 30px;
+    line-height: 30px;
+}
+
+.side p {
+    line-height: 20px;
+}
+
+
+/* formulaire */
+
+
+  
+form ul li {
+	display: grid;
+	grid-template-columns: [start label] 7em [input] .10fr [end] ;
+	gap: 10px;
+	margin-bottom: 10px;
+  }
+
+.formg{
+	background-color: aqua;
+	width: 350px;
+	height: 150px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50% , -50%);
+}
+
+.mess{
+	resize: none;
+	width: 164px;
+	height: 50px;
+}
+  
