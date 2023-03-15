@@ -17,7 +17,7 @@
         <input id=email  type=email></li>
         <li><label for=message>Message</label>
         <textarea name="" class="mess"></textarea>
-     <input type="submit" name="submit" value="Envoyer">
+     <input type="button" name="submit" value="Envoyer">
     
     </li>
     
