@@ -9,15 +9,21 @@
 </head>
 <body>
 <?php include "../include/menu.php"; ?>
-<form class="formg" method="post" action="script.cgi">
+<form class="formg" method="POST" action="#">
   <ul>
     <li><label for=name>Name:</label>
-        <input id=name ></li>
+
+        <input name="nom" id=name ></li>
+
     <li><label for=email>Email:</label>
-        <input id=email  type=email></li>
+
+        <input name="email" id=email  type=email></li>
+
         <li><label for=message>Message</label>
-        <textarea name="" class="mess"></textarea>
-     <input type="button" name="submit" value="Envoyer">
+
+        <textarea name="message" class="mess"></textarea>
+
+     <input type="submit" name="submit" value="Envoyer">
     
     </li>
     
