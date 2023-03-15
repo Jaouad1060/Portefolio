@@ -1,6 +1,6 @@
 <?php
-// affichage de la variable GET 
-//var_dump($_GET);
+
+require_once "../model/contactmodel.php";
 
 // si il existe une variable get nommée p
 if(isset($_GET['p'])){
