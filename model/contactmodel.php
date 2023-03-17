@@ -34,6 +34,12 @@ if(isset($_POST['nom'], $_POST['email'],$_POST['message'] ))
     $mail = htmlspecialchars(strip_tags(trim($_POST['email'])),ENT_QUOTES); 
 
     $msg = htmlspecialchars(strip_tags(trim($_POST['message'])),ENT_QUOTES);
+
+    $mail = filter_var($mail, FILTER_VALIDATE_EMAIL);
+    if (!$mail) {
+        $afficheErreur = "L'adresse e-mail est invalide";
+    } else {
+    $msg = htmlspecialchars(strip_tags(trim($_POST['message'])),ENT_QUOTES);
     
 
     
@@ -54,6 +60,11 @@ if(isset($_POST['nom'], $_POST['email'],$_POST['message'] ))
 
             # execute la requête de la db
             mysqli_query($db,$sqlInsert);
+
+            $destinataire = 'jaouad1060@hotmail.com'; // remplacer par l'adresse mail souhaitée
+            $sujet = 'Nouveau message du formulaire de contact';
+            $corps_message = "Nom: $nom\nEmail: $mail\nMessage: $msg";
+            mail($destinataire, $sujet, $corps_message);
 
             
             # pas d'erreur création du texte
@@ -94,7 +105,8 @@ if(isset($_POST['nom'], $_POST['email'],$_POST['message'] ))
     }
 
 }
-else {$message = '';}
+
+}
 
 // requête en variable texte contenant du MySQL
 

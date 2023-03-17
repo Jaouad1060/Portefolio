@@ -1,13 +1,13 @@
 
-body.nuits{
-	background-color: black;
-	color: white;
-	}
-	
+	.dark-mode{
+	background: rgb(26,65,78);
+	background: linear-gradient(90deg, rgba(26,65,78,1) 0%, rgba(149,160,149,1) 84%);
+	color:white;
+	}	
 
 
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px){ /* responsive telephone */
 
 	nav{
 		display: flex;
@@ -44,128 +44,94 @@ body.nuits{
 }
 
 
-@media screen and (min-width: 701px) and (max-width: 1400px) {
+@media screen and (min-width: 701px) and (max-width: 1400px) { /* reponsive ipad */
 	nav  {
 		position: fixed;
 		right: 1300px;
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 body{
     margin: 0;
-    height:100vh;
-	width: 100%;
-    background: rgb(149,160,149);
-	background: linear-gradient(0deg, rgba(149,160,149,1) 35%, rgba(26,65,78,1) 80%);
-	overflow: hidden;
+    height:100vh; /* taille de l'image prend toutes la page*/
+	width: 100%;  /* largeur prends toutes la page*/
+	background: linear-gradient(0deg, rgba(149,160,149,1) 35%, rgba(26,65,78,1) 80%); /* couleur du fond des pages */ 
+	overflow: hidden; /* pour eviter le scroll*/ 
+	color:black;
+	transition: all 1s;
+	font-family: 'Hanalei Fill', cursive;
 
 }
 
 #fond {
-    height: 100% ;
-    background-size: cover;
-    background-image: url(../img/3253522.jpg);
-    background-repeat: repeat-y;
+    height: 100% ; /* prebds toutes la page l image*/
+    background-size: cover; /* couvre tous le fond*/
+    background-image: url(../img/3253522.jpg); /* inserer une img*/
+    background-repeat: repeat-y; /* ne pas repeter mon image pour que elle prends tous le fond*/
 	
 }
 
 #centre {
         display: flex;
         height: 100%;
-        text-align: right;
-		margin-right: 30px;
-        flex-direction: column;
-        justify-content: center;
+        text-align: right; /* centrer a droite */
+		margin-right: 30px; /* mettre une marge a partir de la droite*/
+        flex-direction: column; /*mettre en colonne*/
+        justify-content: center;  /* justifer les mots */
 }
 
 nav a {
-position: relative;
-left: 1300px;
-color: white;
-font-size: 20px;
-text-decoration: none;
-line-height: 50px;
-padding: 20px;
+position: relative;  
+left: 1300px;  /* a partir de la gauche mettre 1300px*/
+color: white;  /* couleur de la navigation*/
+font-size: 20px;  /* taille des caractere */
+text-decoration: none;  /*enlever le surlignement*/
+line-height: 50px;  /* définir la hauteur de ligne */
+padding: 20px;  /*espacement entre les mots*/
 
 }
  
 nav a:hover{
 
-color: rgb(233, 230, 64);
+color: rgb(233, 230, 64);  /*la couleur quand on passe dessus */
 }
 
 nav{
-background-color: #1a414e;
-padding: 10px;
+background-color: #1a414e;  /*couleur de la barre de navigation*/
+padding: 10px;  /*epaisseur de la nav */
 
 
 }
 
 .nom{
-    color: white;
-    font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;  /*couleur des mots*/
+    font-size: 40px;  /*taille des mots */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  /*polices des mots */
 }
 
 .ligne{
-    color: white;
+    color: white;  /*couelur de la ligne*/
 }
 
 .port{
-    color: white;
-    font-size: 35px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;  /*couleur des mots*/
+    font-size: 35px;  /*taille des mots*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  /*polices des mot*/
 }
 
-
-.link{
-    height: 15%;
-    position: absolute;
-    left: 1250px;
-    top: 580px;
-}
-
-.git{
-    height: 10%;
-    position: absolute;
-    left: 1400px;
-    top: 620px;
-}
-
-.twit{
-    height: 10%;
-    position: absolute;
-    left: 1150px;
-    top: 620px;
-}
 
 /* TRAVAUX*/ 
 * {
-	margin: 0;
-	padding: 0;
+	margin: 0; 
+	padding: 0; 
 }
 
 
 section::before {
-	content: '';
-	position: absolute;
-	top: 90px;
-	left: 0;
-	width: 100%;
-	background: linear-gradient(#22ca13, #51316d);
-	clip-path: circle(30% at right 70%);
+	content: ''; /*inserer du vide*/
+	position: absolute; /*position*/
+	top: 90px; /* a partir de du haut , descendre de 90px*/
+	
 }
 
 section::after {
@@ -330,6 +296,8 @@ section::after {
 .side p {
     line-height: 20px;
 }
+
+
 
 
 /* formulaire */

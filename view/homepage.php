@@ -8,15 +8,26 @@
     <title>Document</title>
 </head>
 <body>
+    
 
 <?php include "../include/menu.php"; ?>
+
+
+
 
 <div id="fond">
     <div id="centre">
         <h1 class="nom">El Berkani Jaouad</h1>
         <p class="ligne">________________________________________</p>
         <p class="port">Portfolio / Web Dev 2023</p>
-      
     
+</div>
+</div>
+
+
+<?php include "../include/darkmode.php"; ?>
+
+
+
 </body>
 </html>

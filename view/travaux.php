@@ -44,5 +44,8 @@
 			
 		</div>
 	</section>
+	
+<?php include "../include/darkmode.php"; ?>
+
 </body>
 </html>
