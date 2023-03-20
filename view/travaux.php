@@ -45,7 +45,7 @@
 		</div>
 	</section>
 	
-<?php include "../include/darkmode.php"; ?>
+<button id="btdm" onClick="darkMode()"> Dark Mode </button><script src="./javascript/script.js"></script>
 
 </body>
 </html>
