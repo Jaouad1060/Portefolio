@@ -28,8 +28,9 @@
     </li>
     
 
-   
+    <button onClick="darkMode()"> Dark Mode </button><script src="./javascript/script.js"></script>
     
   </ul>
+  
 </body>
 </html>

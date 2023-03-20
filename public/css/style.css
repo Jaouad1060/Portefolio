@@ -1,41 +1,37 @@
 
-	.dark-mode{
-	background: rgb(26,65,78);
-	background: linear-gradient(90deg, rgba(26,65,78,1) 0%, rgba(149,160,149,1) 84%);
-	color:white;
-	}	
+.dark-mode{
+	background: linear-gradient(90deg, rgba(0,0,0,1) 39%, rgba(27,150,175,1) 100%); /* couleur de fond*/		
+	
+}	
 
+#btdm{
+	position: absolute; /*positionnement*/
+	bottom: 10px; /*mettre en bas */
+	left: 10px; /*mettre en bas a gaucge*/
+}
 
 
 @media only screen and (max-width: 700px){ /* responsive telephone */
 
-	nav{
-		display: flex;
-		justify-content: space-evenly;
-		position: absolute;
-		top: -20px;
-		right: 1300px;
-		width: 100%;
-
-	}
+	
 	.container .card{
-		position: relative;
-		right: 70px;
-	}
+		position: relative; /*positionnement*/
+		right: 70px; /*postionnement a droite*/
+	} 
 	.glob {
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		height: 190vh;
-		overflow: auto;
-		flex-direction: row;
-	    position: absolute;
-    	top: 100px;
+		display: flex; /*positon*/
+		flex-wrap: wrap; /*mettre sur une seule ligne en etage*/
+		width: 100%; /*largeur*/
+		height: 190vh; /*taille*/
+		overflow: auto; /*scrool*/
+		flex-direction: row; /*mettre sur une seule ligne*/
+	    position: absolute; /*positionnement*/
+    	top: 100px; /*descendre a partir du haut*/
 		
 	}
 	.glob123 .side {
-		position: absolute;
-		top: 70px;
+		position: absolute; /*position*/
+		top: 70px; /*descendre a partir du haut*/
 
 	}
 	
@@ -44,22 +40,15 @@
 }
 
 
-@media screen and (min-width: 701px) and (max-width: 1400px) { /* reponsive ipad */
-	nav  {
-		position: fixed;
-		right: 1300px;
-	}
-}
+
 
 body{
-    margin: 0;
+    margin: 0; /*la taille des marges */
     height:100vh; /* taille de l'image prend toutes la page*/
 	width: 100%;  /* largeur prends toutes la page*/
 	background: linear-gradient(0deg, rgba(149,160,149,1) 35%, rgba(26,65,78,1) 80%); /* couleur du fond des pages */ 
 	overflow: hidden; /* pour eviter le scroll*/ 
-	color:black;
-	transition: all 1s;
-	font-family: 'Hanalei Fill', cursive;
+	font-family: 'Hanalei Fill', cursive; /*choix de ecriture*/
 
 }
 
@@ -72,8 +61,8 @@ body{
 }
 
 #centre {
-        display: flex;
-        height: 100%;
+        display: flex; /*position*/
+        height: 100%;   /* taille de l'image prend toutes la page*/
         text-align: right; /* centrer a droite */
 		margin-right: 30px; /* mettre une marge a partir de la droite*/
         flex-direction: column; /*mettre en colonne*/
@@ -81,8 +70,6 @@ body{
 }
 
 nav a {
-position: relative;  
-left: 1300px;  /* a partir de la gauche mettre 1300px*/
 color: white;  /* couleur de la navigation*/
 font-size: 20px;  /* taille des caractere */
 text-decoration: none;  /*enlever le surlignement*/
@@ -99,7 +86,8 @@ color: rgb(233, 230, 64);  /*la couleur quand on passe dessus */
 nav{
 background-color: #1a414e;  /*couleur de la barre de navigation*/
 padding: 10px;  /*epaisseur de la nav */
-
+display: flex; /*position*/
+justify-content: center; /* /*position au milieu*/ 
 
 }
 
@@ -122,7 +110,7 @@ padding: 10px;  /*epaisseur de la nav */
 
 /* TRAVAUX*/ 
 * {
-	margin: 0; 
+	margin: 0; /*la taille des marges */
 	padding: 0; 
 }
 
@@ -136,29 +124,29 @@ section::before {
 
 section::after {
 	content: '';
-	position: absolute;
-	top: 90px;
-	left: 0;
-	width: 100%;
+	position: absolute; /*position*/
+	top: 90px; /*descendre a partir du haut*/
+	left: 0; /*coller a gauche*/
+	width: 100%; /* largeur prends toutes la page*/
 
     
 }
 
 .container {
-	position: relative;
+	position: relative; /*position*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	margin: 40px 0;
+	margin: 40px 0; /*la taille des marges */
 }
 
 .container .card {
-	position: relative;
-	width: 300px;
-	height: 400px;
+	position: relative; /*position*/
+	width: 300px; /* largeur prends toutes la page*/
+	height: 400px;  /* taille de l'image prend toutes la page*/
 	background: rgba(255, 255, 255, 0.05);
-	margin: 20px;
+	margin: 20px; /*la taille des marges */
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 	border-radius: 15px;
 	display: flex;
@@ -168,7 +156,7 @@ section::after {
 }
 
 .container .card .content {
-	position: relative;
+	position: relative; /*position*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -181,19 +169,19 @@ section::after {
 }
 
 .container .card .content .imgBx {
-	position: relative;
-	width: 150px;
-	height: 150px;
-	overflow: hidden;
+	position: relative; /*position*/
+	width: 150px; /* largeur prends toutes la page*/
+	height: 150px;  /* taille de l'image prend toutes la page*/
+	overflow: hidden; /* pour eviter le scroll*/ 
    
 }
 
 .container .card .content .imgBx img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	position: absolute; /*position*/
+	top: 0; /*descendre a partir du haut*/
+	left: 0; /*coller a gauche*/
+	width: 100%; /* largeur prends toutes la page*/
+	height: 100%;  /* taille de l'image prend toutes la page*/
 	object-fit: cover;
    
 }
@@ -205,7 +193,7 @@ section::after {
 	font-weight: 500;
 	font-size: 18px;
 	text-align: center;
-	margin: 20px 0 10px;
+	margin: 20px 0 10px; /*la taille des marges */
 	line-height: 1.1em;
 }
 
@@ -216,14 +204,14 @@ section::after {
 }
 
 .container .card .sci {
-	position: absolute;
-	bottom: 50px;
+	position: absolute; /*position*/
+	bottom: 50px; 
 	display: flex;
 }
 
 .container .card .sci li {
 	list-style: none;
-	margin: 0 10px;
+	margin: 0 10px; /*la taille des marges */
 	transform: translateY(40px);
 	transition: 0.5s;
 	opacity: 0;
@@ -246,14 +234,14 @@ section::after {
 
 
 .glob {
-    display: flex;
+    display: flex; /*position*/
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
     align-content: center;
-    width: 100%;
-    height: 90vh;
-    overflow: auto;
+    width: 100%; /* largeur prends toutes la page*/
+    height: 90vh;  /* taille de l'image prend toutes la page*/
+    overflow: auto; /* afficher meme si c'est pas dans le cadre */
     flex-direction: row;
    
     
@@ -263,10 +251,10 @@ section::after {
 
 .glob123 {
     height:225px;
-    width: 300px;
+    width: 300px; /* largeur prends toutes la page*/
     transform-style: preserve-3d;
     transition: all 1s ease-in-out;
-    margin: 40px;
+    margin: 40px; /*la taille des marges */
     
 }
 
@@ -276,11 +264,11 @@ section::after {
 
 .glob123 .side {
     color: white;
-    text-align: center;
+    text-align: center; /* centrer au milieu */
     border-radius: 10px;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+    height: 100%;  /* taille de l'image prend toutes la page*/
+    width: 100%; /* largeur prends toutes la page*/
+    overflow: hidden; /* pour eviter le scroll*/ 
     backface-visibility: hidden;
 }
 
@@ -289,7 +277,7 @@ section::after {
 }
 
 .side h3 {
-    padding-top: 30px;
+    padding-top: 30px; 
     line-height: 30px;
 }
 
@@ -305,70 +293,70 @@ section::after {
 
   
 form ul li {
-	display: grid;
-	grid-template-columns: [start label] 8em [input] .10fr [end] ;
-	gap: 10px;
-	margin-bottom: 10px;
+	display: grid; /*position*/
+	grid-template-columns: [start label] 8em [input] .10fr [end] ; /* mettre tous a gauche et aligner et le contenu a droite*/
+	gap: 10px; /* espacement entre les lignes */
+	margin-bottom: 10px; /*la taille des marges */
   }
 
 .formg{
 	background-color: #deecdc;
-	width: 550px;
-	height: 350px;
-	padding: 5px;
-	display: flex;
+	width: 550px; /* largeur prends toutes la page*/
+	height: 350px;  /* taille de l'image prend toutes la page*/
+	padding: 5px; /*espacement entre les mots*/
+	display: flex; /*position*/
 	align-items: center;
 	justify-content: center;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transform: translate(-50% , -50%);
-	border-radius: 
+	top: 50%; /*descendre a partir du haut*/
+	left: 50%; /*coller a gauche*/
+	position: absolute; /*position*/
+	transform: translate(-50% , -50%); /* mettre au milieu*/
+	border-radius: /* mettre en rond*/
 	100% 100% 100% 100% / 100% 100% 100% 100%;
-	box-shadow: 15px 19px 29px 5px rgba(0,0,0,0.5);
+	box-shadow: 15px 19px 29px 5px rgba(0,0,0,0.5); /* fond du rond du formulaire*/
 	
 }
 
 .mess{
-	resize: none;
-	width: 164px;
-	height: 50px;
+	resize: none; /* eviter de grossir le message avec les caractere*/
+	width: 164px; /* largeur prends toutes la page*/
+	height: 50px;  /* taille de l'image prend toutes la page*/
 }
   
 /* tuto*/
 
 .tutoview{
-	height:auto;
-	overflow: visible;
+	height:auto; /* taille de l'image prend toutes la page*/
+	overflow: visible; /* afficher meme si c'est pas dans le cadre */
 }
 
 .tuto{
-	text-align: center;
-	color: white;
-	font-size: 60px;
-	padding: 40px;
+	text-align: center; /*centrer au milieu*/
+	color: white; /*color police*/
+	font-size: 60px; /*taille de la police*/
+	padding: 40px; /*espacement entre les mots*/
 }
 
 .imgbur{
-	display: block;
-	width: 10%;
-	margin: auto;
+	display: block; /*position*/
+	width: 10%; /* largeur prends toutes la page*/
+	margin: auto; /*la taille des marges */
 	
 }
 .textbur{
-	text-align: center;
-	color: white;
+	text-align: center; /*centrer au milieu*/
+	color: white; /*color police*/
 }
 
 .imgbur1{
-	display: block;
-	width: 40%;
-	margin: auto;
+	display: block; /*position*/
+	width: 40%; /* largeur prends toutes la page*/
+	margin: auto; /*la taille des marges */
 }
 
 .tuto1{
-	text-align: center;
-	color: white;
-	font-size: 60px;
-	padding: 40px;
+	text-align: center; /*centrer au milieu*/
+	color: white; /*color police*/
+	font-size: 60px; /*taille de la police*/
+	padding: 40px; /* définir les différents écarts */
 }
