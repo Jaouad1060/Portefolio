@@ -15,7 +15,7 @@
 </p>
 <img class="imgbur" src="../public/img/6499731.png"><br>
 
-<br><p class="textbur"> 2. Nous avons besoin de deux éléments, un button pour l'icône et un nav pour le menu lui-même. L' nav élément doit être imbriqué dans le bouton.</p><br>
+<br><p class="textbur"> 2. Nous avons besoin de deux éléments, un boutton pour l'icône et un nav pour le menu lui-même. La nav élément doit être imbriqué dans le bouton.</p><br>
 <img class="imgbur1" src="../public/img/petit.png"><br>
 
 
@@ -29,7 +29,7 @@
 <img class="imgbur1" src="../public/img/tous.png">
 
 
-<br><p class="textbur"> 6. On n’oublie pas de le CSS, nous allons rajouter un menu lorsque on clique dessus et nos différents pages apparaisseront.</p><br>
+<br><p class="textbur"> 6. On n’oublie pas le CSS, nous allons rajouter un menu lorsqu' on clique dessus et nos différente pages apparaitrons.</p><br>
 <img class="imgbur1" src="../public/img/court.png">
 
 <br><p class="textbur"> 7. Et aussi une transition (animation) qui fera apparaitre notre menu en venant du côté gauche. </p><br>
@@ -38,13 +38,13 @@
 <br><p class="textbur"> 8. Voici le résultat quand on clique sur notre  menu Burger. </p><br>
 <img class="imgbur1" src="../public/img/fin.png">
 
-<h1 class="tuto1">Rendre le menu hamburger responsive avec CSS</h1>
+<h1 class="tuto1">Rendre le menu hamburger responsif avec CSS</h1>
 <br><p class="textbur"> 1. Nous devons choisir un point d'arrêt - une largeur d'écran qui fera basculer l'affichage entre le menu pleine largeur et le menu hamburger CSS. </p><br>
 <p class="textbur">Lorsque l'écran est inférieur à 750px, ces styles seront appliqués.</p>
 <img class="imgbur1" src="../public/img/resp.png">
 
-<h1 class="tuto1">Choix du Tuto</h1>
-<br><br><p class="textbur">J'ai choisis ce tuto car je trouve qu'il est assez complet concernant le language de php , moi meme ayant des diffciulté en php ,je me suis informé via ces videos. </p><br><iframe class="imgbur1" width="560" height="315" src="https://www.youtube.com/embed/CLJRUiajm8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h1 class="tuto1">Le Choix du Tuto</h1>
+<br><br><p class="textbur">J'ai choisi ce tuto car je trouve qu'il est assez complet concernant le language de php, moi-meme ayant des diffciultés en php, je me suis informé via ces videos. </p><br><iframe class="imgbur1" width="560" height="315" src="https://www.youtube.com/embed/CLJRUiajm8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  <button id="btdm" onClick="darkMode()"> Dark Mode </button><script src="./javascript/script.js"></script>
 </body>
 </html>
